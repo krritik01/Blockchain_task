@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deposit to Aave v2 with MetaMask</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethereumjs-tx@2.1.2/dist/ethereumjs-tx.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <h1>Deposit to Aave v2 with MetaMask</h1>
+
+    <label for="tokenAmount">Enter Token Amount:</label>
+    <input type="number" id="tokenAmount" placeholder="Token Amount"><br><br>
+
+    <button id="connectButton">Connect MetaMask</button><br><br>
+
+    <button id="depositButton" disabled >Deposit to Aave</button><br><br>
+
+    <script src="aaveInteraction.js" defer></script>
+    <script src="depositToAaveV2.js" defer></script>
+    <script>
+        document.getElementById('connectButton').onclick = connectToMetaMask;
+        document.getElementById('depositButton').onclick = depositToAaveV2;
+    </script>
+</body>
+
+</html>
