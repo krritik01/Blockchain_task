@@ -1,13 +1,4 @@
-// async function depositToAaveV2() {
-//     try {
-//         const tokenAmount = document.getElementById('tokenAmount').value;
-//         if (!tokenAmount || isNaN(tokenAmount)) {
-//             console.log('Please enter a valid token amount');
-//             return;
-//         }
-
-
-        document.getElementById('depositButton').onclick = async function () {
+  document.getElementById('depositButton').onclick = async function () {
             try {
                 const tokenAmount = document.getElementById('tokenAmount').value;
                 if (!tokenAmount || isNaN(tokenAmount)) {
